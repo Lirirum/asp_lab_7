@@ -1,0 +1,33 @@
+﻿@model WebApplication9.FileModel
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width" />
+    <title>Форма</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+<div class="main">
+@using (Html.BeginForm("Download", "File", FormMethod.Post))
+{
+    <div>
+        <label for="firstName">Ім'я:</label>
+        <input type="text" id="firstName" name="firstName" />
+    </div>
+    <div>
+        <label for="lastName">Прізвище:</label>
+        <input type="text" id="lastName" name="lastName" />
+    </div>
+    <div>
+        <label for="fileName">Назва файлу:</label>
+        <input type="text" id="fileName" name="fileName" />
+    </div>
+    <div>
+        <input type="submit" value="Продовжити" />
+    </div>
+}
+ </div>
+</body>
+</html>
